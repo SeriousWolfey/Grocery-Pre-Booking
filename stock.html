@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+	<title>Stock Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<center><p class="heading"><b>STOCK PAGE</b></p></center>
+
+<div class="flex-container itemcontainer">
+
+	<div class="flex-container itembox">
+		<div><img src="image/biscuit.webp"></div>
+		<div class="itemname">Biscuit</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('biscuitstock')">+</button>
+				<input id=biscuitstock type=number min=0 max=99>
+				<button onclick="decrement('biscuitstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/coconut.jpg"></div>
+		<div class="itemname">Coconut</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('coconutstock')">+</button>
+				<input id=coconutstock type=number min=0 max=99>
+				<button onclick="decrement('coconutstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/corn_flakes.jpg"></div>
+		<div class="itemname">Corn Flakes</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('corn_flakesstock')">+</button>
+				<input id=corn_flakesstock type=number min=0 max=99>
+				<button onclick="decrement('corn_flakesstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/detergent.jpg"></div>
+		<div class="itemname">Detergent</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('detergentstock')">+</button>
+				<input id=detergentstock type=number min=0 max=99>
+				<button onclick="decrement('detergentstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/eggs.jpg"></div>
+		<div class="itemname">Eggs</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('eggsstock')">+</button>
+				<input id=eggsstock type=number min=0 max=99>
+				<button onclick="decrement('eggsstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/ketchup.webp"></div>
+		<div class="itemname">Ketchup</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('ketchupstock')">+</button>
+				<input id=ketchupstock type=number min=0 max=99>
+				<button onclick="decrement('ketchupstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/potato_chips.webp"></div>
+		<div class="itemname">Potato Chips</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('potato_chipsstock')">+</button>
+				<input id=potato_chipsstock type=number min=0 max=99>
+				<button onclick="decrement('potato_chipsstock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/shampoo.jpg"></div>
+		<div class="itemname">Shampoo</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('shampoostock')">+</button>
+				<input id=shampoostock type=number min=0 max=99>
+				<button onclick="decrement('shampoostock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/toothpaste.jpg"></div>
+		<div class="itemname">Toothpaste</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('toothpastestock')">+</button>
+				<input id=toothpastestock type=number min=0 max=99>
+				<button onclick="decrement('toothpastestock')">-</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex-container itembox">
+		<div><img src="image/vegetable_oil.jpg"></div>
+		<div class="itemname">Vegetable Oil</div>
+		<div class="flex-container" style="flex-direction:column;">
+			<div style="font-size:30px;"><b>Stock:</b></div>
+			<div class="flex-container counters">
+				<button onclick="increment('vegetable_oilstock')">+</button>
+				<input id=vegetable_oilstock type=number min=0 max=99>
+				<button onclick="decrement('vegetable_oilstock')">-</button>
+			</div>
+		</div>
+	</div>
+</div>
+<center><button onclick="reset_all()" class="reset_button">Reset All Values</button></center>
+
+</body>
+<script>
+const item=["biscuitstock","coconutstock","corn_flakesstock","detergentstock","eggsstock","ketchupstock","potato_chipsstock","shampoostock","toothpastestock","vegetable_oilstock"];
+for (let i=0;i<item.length;i++){
+	if (!localStorage.getItem(item[i])){
+		localStorage.setItem(item[i], 0);
+	}
+	document.getElementById(item[i]).value = localStorage.getItem(item[i]);
+}
+function increment(x){
+	document.getElementById(x).stepUp();
+	localStorage.setItem(x, document.getElementById(x).value);
+}
+function decrement(x){
+	document.getElementById(x).stepDown();
+	localStorage.setItem(x, document.getElementById(x).value);
+}
+</script>
+
+</html>
